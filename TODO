@@ -13,7 +13,7 @@ Improvement:
 D Reel spin blurring (instead of animation)
 	D Make it work for normal play
 	D Make it work for fast test
-- Reel spin animation
+D Reel spin animation
 - Frame around reels
 - Display simulated START and QUIT buttons, lit appropriately
 D Win meter
@@ -27,18 +27,21 @@ D Sound
 		D 50p win
 		D £1 win
 		D £5 win
-- Shuffle the reel vectors?
+D Shuffle the reel vectors?
 - Bigger window, higher resolution reel symbols etc.
-- Make fast test faster
-- General layout improvement
+D Make fast test faster
+D General layout improvement
 D Wider reel bands with white either side of symbol
 - Paytable display above?
+- Anticipation on 3rd reel if first two symbols match, esp. if Bell
+* Force certain wins to demo sounds etc.
 
 Style improvements:
 - Get rid of the individual Cherry, Lemon etc., structs, and just use "Fruit"
 - Run 'cargo clippy'
 - Make all the Fruit stuff use less memory (multiple copies of patterns etc.)
 - Fruits don't need coordinates
+- Make fast_test mode a "cargo test"?
 
 
 
