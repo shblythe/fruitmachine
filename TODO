@@ -34,14 +34,25 @@ D General layout improvement
 D Wider reel bands with white either side of symbol
 - Paytable display above?
 - Anticipation on 3rd reel if first two symbols match, esp. if Bell
-* Force certain wins to demo sounds etc.
+D Force certain wins to demo sounds etc.
 
 Style improvements:
 - Get rid of the individual Cherry, Lemon etc., structs, and just use "Fruit"
+- Run 'cargo fmt' - consider enabling format on save
 - Run 'cargo clippy'
 - Make all the Fruit stuff use less memory (multiple copies of patterns etc.)
 - Fruits don't need coordinates
 - Make fast_test mode a "cargo test"?
+- Document my code! run `cargo doc --no-deps --open` to test
+- Make the renderer stuff a single library, and consider publishing it
+- Review uses of for..in loops, iters etc.
+- Consider adding logging and implementing debug traits
+- Review error creation and handling - no unsafe uses of unwrap()!
+- Write unit tests (need dependency injection?)
+- Use benchmarks to improve performance, particularly of fast test
+
+- Consider reimplementing the whole thing in rusty_engine, or maybe I should just to frogger...
+
 
 
 
