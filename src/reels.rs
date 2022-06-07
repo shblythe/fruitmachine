@@ -19,26 +19,26 @@ impl Reels {
 		reels.push(Reel::new(NUM_COLS*3/10-FRUIT_WIDTH/2-1,1,0));
 		reels.push(Reel::new(NUM_COLS*1/2-FRUIT_WIDTH/2-1,1,120));
 		reels.push(Reel::new(NUM_COLS*7/10-FRUIT_WIDTH/2-1,1,110));
-		for _ in 0..30 { reels[0].push_symbol(Box::new(Cherry::new(0,0))); }
-		for _ in 0..50 { reels[0].push_symbol(Box::new(Bell::new(0,0))); }
-		for _ in 0..30 { reels[0].push_symbol(Box::new(Lemon::new(0,0))); }
-		for _ in 0..20 { reels[0].push_symbol(Box::new(Orange::new(0,0))); }
-		for _ in 0..11 { reels[0].push_symbol(Box::new(Star::new(0,0))); }
-		for _ in 0..9 { reels[0].push_symbol(Box::new(Seven::new(0,0))); }
+		for _ in 0..30 { reels[0].push_symbol(Box::new(Cherry::new())); }
+		for _ in 0..50 { reels[0].push_symbol(Box::new(Bell::new())); }
+		for _ in 0..30 { reels[0].push_symbol(Box::new(Lemon::new())); }
+		for _ in 0..20 { reels[0].push_symbol(Box::new(Orange::new())); }
+		for _ in 0..11 { reels[0].push_symbol(Box::new(Star::new())); }
+		for _ in 0..9 { reels[0].push_symbol(Box::new(Seven::new())); }
 
-		for _ in 0..30 { reels[1].push_symbol(Box::new(Cherry::new(0,0))); }
-		for _ in 0..50 { reels[1].push_symbol(Box::new(Bell::new(0,0))); }
-		for _ in 0..30 { reels[1].push_symbol(Box::new(Lemon::new(0,0))); }
-		for _ in 0..20 { reels[1].push_symbol(Box::new(Orange::new(0,0))); }
-		for _ in 0..11 { reels[1].push_symbol(Box::new(Star::new(0,0))); }
-		for _ in 0..9 { reels[1].push_symbol(Box::new(Seven::new(0,0))); }
+		for _ in 0..30 { reels[1].push_symbol(Box::new(Cherry::new())); }
+		for _ in 0..50 { reels[1].push_symbol(Box::new(Bell::new())); }
+		for _ in 0..30 { reels[1].push_symbol(Box::new(Lemon::new())); }
+		for _ in 0..20 { reels[1].push_symbol(Box::new(Orange::new())); }
+		for _ in 0..11 { reels[1].push_symbol(Box::new(Star::new())); }
+		for _ in 0..9 { reels[1].push_symbol(Box::new(Seven::new())); }
 
-		for _ in 0..30 { reels[2].push_symbol(Box::new(Cherry::new(0,0))); }
-		for _ in 0..10 { reels[2].push_symbol(Box::new(Bell::new(0,0))); }
-		for _ in 0..31 { reels[2].push_symbol(Box::new(Lemon::new(0,0))); }
-		for _ in 0..26 { reels[2].push_symbol(Box::new(Orange::new(0,0))); }
-		for _ in 0..11 { reels[2].push_symbol(Box::new(Star::new(0,0))); }
-		for _ in 0..10 { reels[2].push_symbol(Box::new(Seven::new(0,0))); }
+		for _ in 0..30 { reels[2].push_symbol(Box::new(Cherry::new())); }
+		for _ in 0..10 { reels[2].push_symbol(Box::new(Bell::new())); }
+		for _ in 0..31 { reels[2].push_symbol(Box::new(Lemon::new())); }
+		for _ in 0..26 { reels[2].push_symbol(Box::new(Orange::new())); }
+		for _ in 0..11 { reels[2].push_symbol(Box::new(Star::new())); }
+		for _ in 0..10 { reels[2].push_symbol(Box::new(Seven::new())); }
 
 		for r in &mut reels {
 			r.shuffle_symbols();

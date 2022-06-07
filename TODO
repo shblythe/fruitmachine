@@ -41,7 +41,8 @@ Style improvements:
 - Run 'cargo fmt' - consider enabling format on save
 - Run 'cargo clippy'
 - Make all the Fruit stuff use less memory (multiple copies of patterns etc.)
-- Fruits don't need coordinates
+D Fruits don't need coordinates
+- Blur no longer needed
 - Make fast_test mode a "cargo test"?
 - Document my code! run `cargo doc --no-deps --open` to test
 - Make the renderer stuff a single library, and consider publishing it
@@ -51,7 +52,7 @@ Style improvements:
 - Write unit tests (need dependency injection?)
 - Use benchmarks to improve performance, particularly of fast test
 
-- Consider reimplementing the whole thing in rusty_engine, or maybe I should just to frogger...
+- Consider reimplementing the whole thing in rusty_engine, or maybe I should just do frogger...
 
 
 
