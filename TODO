@@ -37,7 +37,7 @@ D Wider reel bands with white either side of symbol
 D Force certain wins to demo sounds etc.
 
 Style improvements:
-- Get rid of the individual Cherry, Lemon etc., structs, and just use "Fruit"
+D Get rid of the individual Cherry, Lemon etc., structs, and just use "Fruit"
 - Run 'cargo fmt' - consider enabling format on save
 - Run 'cargo clippy'
 - Make all the Fruit stuff use less memory (multiple copies of patterns etc.)

@@ -4,14 +4,14 @@ use crossterm::style::Color;
 use random_number::rand::{prelude::SliceRandom, thread_rng};
 use rusty_time::prelude::Timer;
 
-use crate::{fruits::{FruitDrawable, FRUIT_HEIGHT, FRUIT_WIDTH },
+use crate::{fruits::{Fruit, FRUIT_HEIGHT, FRUIT_WIDTH },
 						frame::{Drawable, Frame},
 						};
 
 pub struct Reel {
 	x:usize,
 	y:usize,
-	symbols: Vec<Box<dyn FruitDrawable>>,
+	symbols: Vec<Fruit>,
 	current_pos:usize,
 	spinning:bool,
 	stopping:bool,
@@ -27,7 +27,7 @@ impl Reel {
 		}
 	}
 
-	pub fn push_symbol(&mut self, symbol:Box<dyn FruitDrawable>) {
+	pub fn push_symbol(&mut self, symbol:Fruit) {
 		self.symbols.push(symbol);
 	}
 
