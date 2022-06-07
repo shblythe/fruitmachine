@@ -42,7 +42,7 @@ Style improvements:
 - Run 'cargo clippy'
 - Make all the Fruit stuff use less memory (multiple copies of patterns etc.)
 D Fruits don't need coordinates
-- Blur no longer needed
+D Blur no longer needed
 - Make fast_test mode a "cargo test"?
 - Document my code! run `cargo doc --no-deps --open` to test
 - Make the renderer stuff a single library, and consider publishing it

@@ -119,23 +119,6 @@ impl Seven {
 	}
 }
 
-pub struct Blur { fruit: Fruit }
-impl FruitDrawable for Blur { fn fruit(&self) -> &Fruit {&self.fruit} }
-impl Blur {
-	pub fn new() -> Self {
-		Self { fruit: Fruit {
-			name: "Blur",
-			color:Color::DarkGrey, bg_color:Color::White,
-			pattern:vec!(
-				"01000000",
-				"01010000",
-				"00010100",
-				"00000100"
-			)
-		} }
-	}
-}
-
 pub trait FruitDrawable {
 	fn draw_fruit_at(&self, x:usize,y:i32,y_offset:i32,y_clip_top:usize,y_clip_bottom:usize,frame:&mut Frame) {
 		for (row,row_pattern) in self.pattern().iter().enumerate() {
